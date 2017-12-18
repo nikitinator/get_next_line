@@ -6,7 +6,7 @@
 /*   By: snikitin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/05 15:02:13 by snikitin          #+#    #+#             */
-/*   Updated: 2017/12/08 15:02:48 by snikitin         ###   ########.fr       */
+/*   Updated: 2017/12/18 14:40:49 by snikitin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,5 +62,6 @@ int				get_next_line(const int fd, char **line)
 	}
 	if (**line)
 		return (LINE);
+	free(*line);
 	return (n_bytes_read);
 }

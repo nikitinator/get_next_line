@@ -6,7 +6,7 @@
 /*   By: snikitin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 19:39:51 by snikitin          #+#    #+#             */
-/*   Updated: 2017/12/07 14:35:43 by snikitin         ###   ########.fr       */
+/*   Updated: 2017/12/18 14:41:04 by snikitin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ int		main(int argc, char **argv)
 		result = get_next_line(fd, &line);
 		printf("\nline:%s|||\n\n\n", line);
 		printf("result:%d\n%s\n",result, line);
-		free(line);
 	}*/
 	while ((result = get_next_line(fd, &line)) > 0)
 	{
@@ -47,9 +46,7 @@ int		main(int argc, char **argv)
 		printf("result:%d|||\n", result);
 		printf("line:%s|||\n", line);
 		
-		free(line);
 		//result = get_next_line(fd, &line);
-		//free(line);
 	
 	return (0);	
 }
